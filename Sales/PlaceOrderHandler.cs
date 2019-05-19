@@ -15,10 +15,10 @@ namespace Sales
         {
             log.Info($"Received PlaceOrder, OrderId = {message.OrderId}");
 
-            if(random.Next(0, 5) == 0)
-            {
-                throw new Exception("Boom");
-            }
+            // if(random.Next(0, 5) == 0)
+            // {
+            //     throw new Exception("Boom");
+            // }
 
             var orderPlaced = new OrderPlaced
             {
